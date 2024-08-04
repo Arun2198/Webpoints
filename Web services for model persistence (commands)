@@ -1,0 +1,8 @@
+## steps to run the requirements.txt file on AWS Ubuntu
+sudo apt-get update
+sudo apt update
+source venv/bin/activate
+ls
+vi requirements.txt #to create new file
+cat requirements.txt # to view the content of the file without editing
+pip install -r requirements.txt
