@@ -1,0 +1,10 @@
+Flask is great for prototyping models as web services, but it’s not intended to be used directly in a production environment. 
+
+For a proper deployment of a web application, you’ll want to use a WSGI server, which provides scaling, routing, and load balancing.
+
+If you’re looking to host a web service that needs to handle a large workload, then Gunicorn provides a great solution.
+
+Steps for installation and deployment
+
+pip install gunicorn
+gunicorn --bind 0.0.0.0 echo:app
