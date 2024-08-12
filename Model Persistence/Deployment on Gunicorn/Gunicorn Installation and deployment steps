@@ -8,3 +8,5 @@ Steps for installation and deployment
 
 pip install gunicorn
 gunicorn --bind 0.0.0.0 echo:app
+
+Once the above steps are completed, replace 0.0.0.0 with the respective public IP of the server instance.
