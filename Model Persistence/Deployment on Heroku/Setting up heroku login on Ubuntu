@@ -1,0 +1,11 @@
+sudo apt install curl apt-transport-https software-properties-common -y
+curl https://cli-assets.heroku.com/install.sh | sh
+heroku --version # verify that heroku is installed
+
+Login to Heroku webpage and --> Account --> Reveal API Key --> Copy the apI Key
+
+export HEROKU_API_KEY=API_KEY ## Replace the API Key with the api key copied from the heroku webpage
+
+heroku auth:whoami
+heroku create
+## Fill the credit card details, verify the account and continue the deployment.
